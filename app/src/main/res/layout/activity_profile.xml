@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_vertical"
     android:orientation="vertical"
-    tools:context=".activities.RegisterActivity">
+    tools:context=".activities.ProfileActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -63,16 +63,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleDrawable="@drawable/custom_eye"
-            app:passwordToggleTint="@color/gray">
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <EditText
-                android:id="@+id/etPassword"
-                android:layout_marginTop="20dp"
-                android:hint="Password"
-                android:inputType="textPassword"
+                android:id="@+id/etName"
+                android:hint="Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:hint="Address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -88,9 +97,9 @@
             app:passwordToggleTint="@color/gray">
 
             <EditText
-                android:id="@+id/etConfirmPassword"
+                android:id="@+id/etPassword"
                 android:layout_marginTop="20dp"
-                android:hint="Confirm Password"
+                android:hint="Password"
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -98,11 +107,11 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btnRegister"
+            android:id="@+id/btnSave"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="40dp"
-            android:text="Register" />
+            android:text="Save" />
 
         <LinearLayout
             android:layout_width="match_parent"
