@@ -89,6 +89,7 @@ public class HomeFragment extends Fragment {
         cvPay = view.findViewById(R.id.cvPay);
         cvHistory = view.findViewById(R.id.cvHistory);
         cvAccount = view.findViewById(R.id.cvAccount);
+        btnUser = view.findViewById(R.id.btnUser);
 
         preferencesHelper = PreferencesHelper.getInstance(getContext());
 
